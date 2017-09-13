@@ -1,0 +1,23 @@
+{
+  "name": "svgconverttojson",
+  "version": "1.0.0",
+  "description": "convert from svg file to json (geometry)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doxas/svgconverttojson.git"
+  },
+  "author": "doxas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doxas/svgconverttojson/issues"
+  },
+  "homepage": "https://github.com/doxas/svgconverttojson#readme",
+  "dependencies": {
+    "extract-svg-path": "^2.1.0",
+    "svg-mesh-3d": "^1.1.0"
+  }
+}

@@ -1,2 +1,4 @@
 # svgconverttojson
-convert from svg file to json (geometry) 
+
+convert from svg file to json (geometry)
+
