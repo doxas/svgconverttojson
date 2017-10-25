@@ -5,11 +5,13 @@ let fs = require('fs');
 
 let dest = {};
 let paths = {
-    SS1: './resource/msg/msgSS_001.svg',
-    SS2: './resource/msg/msgSS_002.svg',
-    SS3: './resource/msg/msgSS_003.svg',
-    SS4: './resource/msg/msgSS_004.svg',
-    SS5: './resource/msg/msgSS_005.svg',
+    X1:  './resource/msg/msgSS_001.svg',
+    X2:  './resource/msg/msgSS_002.svg',
+    X3:  './resource/msg/msgSS_003.svg',
+    X4:  './resource/msg/msgSS_004.svg',
+    X5:  './resource/msg/msgSS_005.svg',
+    X6:  './resource/msg/msgSS_006.svg',
+    X7:  './resource/msg/msgSS_007.svg',
     S1:  './resource/msg/msgS_001.svg',
     S2:  './resource/msg/msgS_002.svg',
     S3:  './resource/msg/msgS_003.svg',
@@ -23,7 +25,10 @@ let paths = {
     S11: './resource/msg/msgS_011.svg',
     S12: './resource/msg/msgS_012.svg',
     S13: './resource/msg/msgS_013.svg',
-    S13: './resource/msg/msgS_014.svg',
+    S14: './resource/msg/msgS_014.svg',
+    S15: './resource/msg/msgS_015.svg',
+    S16: './resource/msg/msgS_016.svg',
+    S17: './resource/msg/msgS_017.svg',
     M1:  './resource/msg/msgM_001.svg',
     M2:  './resource/msg/msgM_002.svg',
     M3:  './resource/msg/msgM_003.svg',
@@ -32,13 +37,16 @@ let paths = {
     M6:  './resource/msg/msgM_006.svg',
     M7:  './resource/msg/msgM_007.svg',
     M8:  './resource/msg/msgM_008.svg',
-    M8:  './resource/msg/msgM_009.svg',
+    M9:  './resource/msg/msgM_009.svg',
+    M10: './resource/msg/msgM_010.svg',
+    M11: './resource/msg/msgM_011.svg',
     L1:  './resource/msg/msgL_001.svg',
     L2:  './resource/msg/msgL_002.svg',
     L3:  './resource/msg/msgL_003.svg',
     L4:  './resource/msg/msgL_004.svg',
     L5:  './resource/msg/msgL_005.svg',
-    L5:  './resource/msg/msgL_006.svg'
+    L6:  './resource/msg/msgL_006.svg',
+    L7:  './resource/msg/msgL_007.svg'
 };
 
 for(let i in paths){
