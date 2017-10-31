@@ -52,6 +52,10 @@ for(let i in paths){
             console.log('read error');
             return;
         }
+        for(let _i = 0, _j = mesh.positions.length; _i < _j; ++_i){
+            mesh.positions[_i][0] = parseFloat(mesh.positions[_i][0].toFixed(4));
+            mesh.positions[_i][1] = parseFloat(mesh.positions[_i][1].toFixed(4));
+        }
         dest[key] = mesh;
         let f = true;
         for(let j in paths){
