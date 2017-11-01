@@ -10,7 +10,6 @@ let paths = {
     X3:  './resource/msg/msgSS_003.svg',
     X4:  './resource/msg/msgSS_004.svg',
     X5:  './resource/msg/msgSS_005.svg',
-    X6:  './resource/msg/msgSS_006.svg',
     S1:  './resource/msg/msgS_001.svg',
     S2:  './resource/msg/msgS_002.svg',
     S3:  './resource/msg/msgS_003.svg',
@@ -42,8 +41,7 @@ let paths = {
     L3:  './resource/msg/msgL_003.svg',
     L4:  './resource/msg/msgL_004.svg',
     L5:  './resource/msg/msgL_005.svg',
-    L6:  './resource/msg/msgL_006.svg',
-    L7:  './resource/msg/msgL_007.svg'
+    L6:  './resource/msg/msgL_006.svg'
 };
 
 for(let i in paths){
