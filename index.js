@@ -50,11 +50,23 @@ for(let i in paths){
             console.log('read error');
             return;
         }
+        let positions = [];
+        let cells = [];
         for(let _i = 0, _j = mesh.positions.length; _i < _j; ++_i){
-            mesh.positions[_i][0] = parseFloat(mesh.positions[_i][0].toFixed(3));
-            mesh.positions[_i][1] = parseFloat(mesh.positions[_i][1].toFixed(3));
+            positions.push(
+                parseFloat(mesh.positions[_i][0].toFixed(3)),
+                parseFloat(mesh.positions[_i][1].toFixed(3)),
+                0
+            );
         }
-        dest[key] = mesh;
+        for(let _i = 0, _j = mesh.cells.length; _i < _j; ++_i){
+            cells.push(
+                mesh.cells[_i][0],
+                mesh.cells[_i][1],
+                mesh.cells[_i][2]
+            );
+        }
+        dest[key] = {positions: positions, cells: cells};
         let f = true;
         for(let j in paths){
             f = f && dest.hasOwnProperty(j);
