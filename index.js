@@ -5,17 +5,10 @@ let fs = require('fs');
 
 let dest = {};
 let paths = {
-    S1:  './resource/msg/msgS_001.svg',
-    S2:  './resource/msg/msgS_002.svg',
-    S3:  './resource/msg/msgS_003.svg',
-    M1:  './resource/msg/msgM_001.svg',
-    M2:  './resource/msg/msgM_002.svg',
-    M3:  './resource/msg/msgM_003.svg',
-    M4:  './resource/msg/msgM_004.svg',
-    M5:  './resource/msg/msgM_005.svg',
-    M6:  './resource/msg/msgM_006.svg',
-    L1:  './resource/msg/msgL_001.svg'
+    first: './resource/flower_original_20190415.svg'
 };
+
+const TO_FIXED = 3;
 
 for(let i in paths){
     readFile(i, paths[i], (err, key, mesh) => {
@@ -27,8 +20,8 @@ for(let i in paths){
         let cells = [];
         for(let _i = 0, _j = mesh.positions.length; _i < _j; ++_i){
             positions.push(
-                parseFloat(mesh.positions[_i][0].toFixed(3)),
-                parseFloat(mesh.positions[_i][1].toFixed(3)),
+                parseFloat(mesh.positions[_i][0].toFixed(TO_FIXED)),
+                parseFloat(mesh.positions[_i][1].toFixed(TO_FIXED)),
                 0
             );
         }
